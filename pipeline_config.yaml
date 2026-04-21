@@ -1,0 +1,19 @@
+# config/pipeline_config.yaml
+
+# File paths for the Medallion layers
+paths:
+  input:
+    accounts: "data/input/accounts.csv"
+    customers: "data/input/customers.csv"
+  bronze: "data/output/bronze"
+  silver: "data/output/silver"
+  gold: "data/output/gold"
+
+# Data mapping details we found during manual inspection
+mapping:
+  accounts:
+    primary_key: "account_id"
+    foreign_key: "customer_ref"  # Links to customers.customer_id
+  customers:
+    primary_key: "customer_id"
+    geo_key: "province"          # Used for Gold layer aggregations
