@@ -52,4 +52,4 @@ Average risk scores to identify regional portfolio health.
 
 Author: Thapelo Mofokeng
 
-Role: Mechanical Engineer & Data Engineering Implementer
+Role: Mechanical Engineer, Data Analyst & Data Engineering Implementer
