@@ -1,0 +1,4 @@
+pyspark
+duckdb
+deltalake
+pyarrow
